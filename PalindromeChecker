@@ -1,0 +1,12 @@
+# palindrome_checker.py
+
+def is_palindrome(s):
+    """Check if a string is a palindrome."""
+    return s == s[::-1]
+
+if __name__ == "__main__":
+    user_input = input("Enter a string to check if it's a palindrome: ").replace(" ", "").lower()
+    if is_palindrome(user_input):
+        print("Yes, it's a palindrome.")
+    else:
+        print("No, it's not a palindrome.")
